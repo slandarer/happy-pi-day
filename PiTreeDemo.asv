@@ -1,0 +1,25 @@
+% PiTreeDemo
+
+Pi=[3,getPi(768)];
+pos9=[0,find(Pi==9)];
+
+set(gcf,'Position',[200,50,900,900],'Color',[1,1,1]);
+ax=gca;hold on
+ax.Position=[0,0,1,1];
+ax.DataAspectRatio=[1,1,1];
+ax.XLim=[.5,40.5];
+for j=1:6
+    for i=1:13
+        n=
+        if n<50
+            n=i+(j-1)*13;
+            tPi=Pi((pos9(n)+1):pos9(n+1)+1);
+            if length(tPi)>2
+                PiTree(tPi,[0+i*3,0-j*3],true);
+            else
+                PiTree([Pi(pos9(n)),tPi],[0+i*3,0-j*3],false);
+            end
+        end
+    end
+end
+
