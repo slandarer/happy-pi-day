@@ -1,15 +1,12 @@
-# HappyPiDay
+# Happy Pi Day
 
-#### 介绍
-Happy Pi Day !  !  !
+## Introduction
 
-#### 打包链接
+$$ \text{Happy Pi Day! ! ! }\\
 
-链接：https://pan.baidu.com/s/1MBJHN571iIvbwyGzcL-3TQ?pwd=slan \
-提取码：slan 
+\text{Visualizing the Mathematical Constant \pi \, using MATLAB} $$
 
-
-#### 艺术效果展示
+## Artistic Effect Display
 
 ![输入图片说明](PiPlanetDemo8.png)
 
