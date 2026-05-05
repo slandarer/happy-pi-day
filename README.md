@@ -2,9 +2,9 @@
 
 ## Introduction
 
-$$ \text{Happy Pi Day! ! ! }\\
+Happy Pi Day
 
-\text{Visualizing the Mathematical Constant \pi \, using MATLAB} $$
+Visualizing the Mathematical Constant π, using MATLAB
 
 ## Artistic Effect Display
 
