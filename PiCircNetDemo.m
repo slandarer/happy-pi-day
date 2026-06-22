@@ -1,6 +1,11 @@
-%% Pi digit connectivity visualization (digits 1-1000)
+%% PiCircNetDemo : Pi digit connectivity visualization (digits 1-1000)
+% Zhaoxu Liu / slandarer (2026). Happy Pi Day 
+% (https://www.mathworks.com/matlabcentral/fileexchange/126210-happy-pi-day), 
+% MATLAB Central File Exchange. 检索来源 2026/3/14.
 
-% First 1000 digits of pi after decimal point
+% Zhaoxu Liu / slandarer (2026). circular network chart 
+% (https://www.mathworks.com/matlabcentral/fileexchange/118655-circular-network-chart), 
+% MATLAB Central File Exchange. Retrieved April 25, 2026.
 Group = getPi(1000);
 
 % Build adjacency matrix: connect each digit to its next neighbor (off-diagonal)
@@ -13,15 +18,15 @@ Data = Data + Data.' + eye(1000);   % Make symmetric and add self-loops
 
 % Define group (digit) names and custom colors
 groupName = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-colorList = [239, 65, 75; 230, 115, 48; 229, 158, 57; 232, 136, 85; 239, 199, 97;
-    144, 180, 116; 78, 166, 136; 81, 140, 136; 90, 118, 142; 43, 121, 159] ./ 255;
+colorList = [239,  65,  75; 230, 115,  48; 229, 158,  57; 232, 136,  85; 239, 199,  97;
+             144, 180, 116;  78, 166, 136;  81, 140, 136;  90, 118, 142;  43, 121, 159] ./ 255;
 
 % Create figure with black background
 figure()
 set(gca, 'Color', [0, 0, 0])
 
 % Initialize circular network chart
-CNPI = circNetChart(Data);
+CNPI = utils.circNetChart(Data);
 
 % Node and edge appearance (uniform sizes)
 CNPI.NodeSizeLim   = [0.01, 0.01];
